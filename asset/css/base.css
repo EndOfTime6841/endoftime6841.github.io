@@ -1,0 +1,31 @@
+body {
+      background-color: cyan;
+      font-family: Arial, Helvatica, serif;
+    }
+    .b1 {
+      background-color: #2563eb;
+      color: #ffffff;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+    .b2 {
+      background-color: #2563eb;
+      color: #ffffff;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+    .p1 {
+      font-size: 20px;
+    }
