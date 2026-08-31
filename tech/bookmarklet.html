@@ -39,9 +39,13 @@
   <h1 class="h1">Cool bookmarklets</h1>
   <p class="p1">Credits of some go to <a href="github.com/05khonz">05khonz (account now deleted)</a> and <a href="https://sites.google.com/site/satznstuff/home/bookmarklets">Satz'nstuff</a> for some of them.</p>
   <h2 class="h1">Conways game of life (somehow)</h2>
-  <button class="b1">It works!<script>(()=%3E%7Bif(window.__gol)return%20window.__gol.remove(),cancelAnimationFrame(window.__golRAF),void%20delete%20window.__gol;const%20e=Math.ceil(innerWidth/8),t=Math.ceil(innerHeight/8),n=document.createElement(%22canvas%22);n.width=e,n.height=t,n.style.cssText=%22%5Cnposition:fixed;%5Cnleft:0;top:0;%5Cnwidth:100vw;height:100vh;%5Cnimage-rendering:pixelated;%5Cnpointer-events:none;%5Cnz-index:2147483647;%5Cn%22,document.body.appendChild(n);const%20o=n.getContext(%222d%22);o.imageSmoothingEnabled=!1;let%20i=new%20Uint8Array(e*t),a=new%20Uint8Array(e*t);for(let%20e=0;e%3Ci.length;e++)i%5Be%5D=Math.random()%3C.18;window.__gol=n,function%20n()%7Bfor(let%20n=0;n%3Ct;n++)for(let%20o=0;o%3Ce;o++)%7Blet%20d=0;for(let%20a=-1;a%3C=1;a++)for(let%20l=-1;l%3C=1;l++)if(l%7C%7Ca)%7Bd+=i%5B(n+a+t)%25t*e+(o+l+e)%25e%5D%7Dconst%20l=n*e+o;a%5Bl%5D=3===d%7C%7Ci%5Bl%5D&&2===d?1:0%7D%5Bi,a%5D=%5Ba,i%5D;const%20d=o.createImageData(e,t);for(let%20e=0;e%3Ci.length;e++)if(i%5Be%5D)%7Bconst%20t=4*e;d.data%5Bt%5D=0,d.data%5Bt+1%5D=255,d.data%5Bt+2%5D=0,d.data%5Bt+3%5D=255%7Do.putImageData(d,0,0),window.__golRAF=requestAnimationFrame(n)%7D()%7D)()</script></button>
+  <button class="b1">
+   It works!
+   <script>(async()=>{if(window.__gol){window.__gol.remove();cancelAnimationFrame(window.__golRAF);delete window.__gol;return}let s=8,w=Math.ceil(innerWidth/s),h=Math.ceil(innerHeight/s),c=document.createElement("canvas");c.width=w,c.height=h,c.style="position:fixed;left:0;top:0;width:100vw;height:100vh;image-rendering:pixelated;pointer-events:none;z-index:2147483647";document.body.appendChild(c);let x=c.getContext("2d");x.imageSmoothingEnabled=!1;let a=new Uint8Array(w*h),b=new Uint8Array(w*h);for(let i=0;i<a.length;i++)a[i]=Math.random()<.18;!function f(){for(let y=0;y<h;y++)for(let X=0;X<w;X++){let n=0;for(let dy=-1;dy<2;dy++)for(let dx=-1;dx<2;dx++)dx||dy?n+=a[((y+dy+h)%h)*w+(X+dx+w)%w]:0;let i=y*w+X;b[i]=n==3||a[i]&&n==2}let t=a;a=b,b=t;let d=x.createImageData(w,h);for(let i=0;i<a.length;i++)if(a[i]){let j=i*4;d.data[j+1]=255,d.data[j+3]=255}x.putImageData(d,0,0),window.__golRAF=requestAnimationFrame(f)}(),window.__gol=c})();</script>
+  </button>
   <h2 class="h1">Make page editable</h2>
   <button class="b1">
+   Fuck up the page however you like
    <script>document.body.contentEditable = 'true'; document.designMode='on'; void 0</script>
   </button>
 </body>
