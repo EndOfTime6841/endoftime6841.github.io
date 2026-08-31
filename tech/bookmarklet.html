@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <head>
- <title>Some Cool bookmarklets</title>  
- <link rel="stylesheet" href="base.css">
+ <title>Some Cool bookmarklets</title>
  <style>
-   .h1 {
-     font-size: 45px;
+  body {
+      background-color: cyan;
+      font-family: Arial, Helvatica, serif;
+  }
+    .b1 {
+      background-color: #2563eb;
+      color: #ffff;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+    .b2 {
+      background-color: #2563eb;
+      color: #ffffff;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+    .p1 {
+      font-size: 20px;
    }
  </style>
 </head>
@@ -14,5 +41,5 @@
   <h2 class="h1">Conways game of life (somehow)</h2>
   <button class="b1" onclick="(()=%3E%7Bif(window.__gol)return%20window.__gol.remove(),cancelAnimationFrame(window.__golRAF),void%20delete%20window.__gol;const%20e=Math.ceil(innerWidth/8),t=Math.ceil(innerHeight/8),n=document.createElement(%22canvas%22);n.width=e,n.height=t,n.style.cssText=%22%5Cnposition:fixed;%5Cnleft:0;top:0;%5Cnwidth:100vw;height:100vh;%5Cnimage-rendering:pixelated;%5Cnpointer-events:none;%5Cnz-index:2147483647;%5Cn%22,document.body.appendChild(n);const%20o=n.getContext(%222d%22);o.imageSmoothingEnabled=!1;let%20i=new%20Uint8Array(e*t),a=new%20Uint8Array(e*t);for(let%20e=0;e%3Ci.length;e++)i%5Be%5D=Math.random()%3C.18;window.__gol=n,function%20n()%7Bfor(let%20n=0;n%3Ct;n++)for(let%20o=0;o%3Ce;o++)%7Blet%20d=0;for(let%20a=-1;a%3C=1;a++)for(let%20l=-1;l%3C=1;l++)if(l%7C%7Ca)%7Bd+=i%5B(n+a+t)%25t*e+(o+l+e)%25e%5D%7Dconst%20l=n*e+o;a%5Bl%5D=3===d%7C%7Ci%5Bl%5D&&2===d?1:0%7D%5Bi,a%5D=%5Ba,i%5D;const%20d=o.createImageData(e,t);for(let%20e=0;e%3Ci.length;e++)if(i%5Be%5D)%7Bconst%20t=4*e;d.data%5Bt%5D=0,d.data%5Bt+1%5D=255,d.data%5Bt+2%5D=0,d.data%5Bt+3%5D=255%7Do.putImageData(d,0,0),window.__golRAF=requestAnimationFrame(n)%7D()%7D)();">It works!</button>
   <h2 class="h1">Make page editable</h2>
-  <button class="b1" onclick="javascript:async:document.body.contentEditable%20=%20'true';%20document.designMode='on';%20void%200">By Satz'nstuff</button>
+  <button class="b1" onclick="document.body.contentEditable%20=%20'true';%20document.designMode='on';%20void%200">By Satz'nstuff</button>
 </body>
