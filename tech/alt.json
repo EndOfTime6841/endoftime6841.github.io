@@ -15,5 +15,18 @@
       "tintColor": "#FF0000",
       "size": 15420480
     }
+    {
+      "name": "SidsInstaller",
+      "bundleIdentifier": "com.sideinstaller.net",
+      "developerName": "FrizzleM",
+      "version": "1.0.0",
+      "versionDate": "2026-03-30T00:00:00Z",
+      "versionDescription": "sidestore installer",
+      "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/latest/download/SideInstaller.ipa",
+      "localizedDescription": "Funny Stuff",
+      "iconURL": "https://endoftime6841.github.io/asset/graphics/IMG_6784.jpeg",
+      "tintColor": "#0000FF",
+      "size": 15420480
+    }
   ]
 }
